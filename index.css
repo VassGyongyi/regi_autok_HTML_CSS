@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.alap{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.container_erdekessegek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ford, .benz{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 1fr;
+    border: 1px solid lightgrey;
+    margin: 0.5rem;
+}
+.fejlec{
+    display: flex;
+    
+    height:fit-content;
+    color:  rgb(42, 71, 42);
+    padding: 10px;
+    align-items: center;
+}
+
+.nev{
+    background-color: rgb(206, 199, 199);
+    
+}
+.man{
+    width:fit-content;
+    background-color:whitesmoke;
+    padding: 1rem;
+    
+    
+    
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    padding: 10px;
+    padding-bottom: 30px;
+    border: 1px solid lightgrey;
+    margin: auto;
+
+}
+.nev h2{
+    text-align: center;
+    
+    
+}
+.man img{
+    max-height: 300px;
+    height: auto;
+    margin: auto;
+}
+.galeria{
+    margin: 0.5rem;
+    
+}
+.navbar{
+    background-color: rgb(42, 71, 42);
+}
+.navbar ul{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        justify-content: flex-start;
+        justify-self: flex-start;
+        gap: 1.5rem;
+         
+}
+.navbar li{
+    
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+p{
+    text-align: justify;
+    padding-top: 2rem;
+}
+.erdekes_szoveg{
+    padding: 20px;
+    text-align: justify;
+}
+footer{
+    display: flex;
+    align-items: center;
+    background-color:whitesmoke;    
+    height: 40px;
+    padding: auto;
+    justify-content: center;
+    text-align: center;
+    
+   }
+  
+.tablazat{
+    overflow-x: auto;
+    margin: 15px;
+}
+.tabla{
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    
+}
+.tabla td, th{
+border: 1px solid #ddd;
+padding: 10px;
+}
+.tabla th{
+    padding: 10px;
+}
+
+.tabla tr:nth-child(even){background-color: #f2f2f2;}
+.tabla tr:hover {background-color: #ddd;}
+
+@media screen and (max-width:1024px){
+    .tablazat{
+        overflow-x: auto;
+    }
+    .tabla{
+        overflow-x: auto;
+    }
+    .container_erdekessegek{
+        grid-template-columns: auto 30%;
+        
+    }
+    .container{
+        grid-template-columns: auto  auto 30%;
+    }
+    .tablazat{
+        grid-template-columns: auto 30%;
+    }
+}
+   
+
+@media screen and (max-width: 800px){
+    .container{
+        
+        grid-template-columns: 1fr;
+
+    }
+    .container_erdekessegek{
+        grid-template-columns: 1fr;
+
+    }
+    
+} 
